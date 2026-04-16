@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "tamagui-docs": {
+      "command": "node",
+      "args": ["server.js"],
+      "cwd": "."
+    }
+  }
+}

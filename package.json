@@ -1,0 +1,27 @@
+{
+  "name": "tamagui-mcp-server-community",
+  "version": "1.0.0",
+  "description": "Offline Tamagui documentation MCP server for Kiro CLI",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "acquire": "node scripts/acquire-corpus.js",
+    "crawl": "node scripts/crawl-docs.js",
+    "download:llms": "node scripts/download-llms-files.js",
+    "normalize": "node scripts/normalize-corpus.js",
+    "index": "node scripts/build-indexes.js",
+    "verify": "node scripts/verify-corpus.js",
+    "refresh": "node scripts/refresh-corpus.js",
+    "doctor": "node scripts/doctor.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "cheerio": "^1.0.0",
+    "fast-glob": "^3.3.3",
+    "minisearch": "^7.1.1",
+    "zod": "^3.24.4"
+  },
+  "license": "MIT"
+}

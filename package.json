@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Offline Tamagui documentation MCP server for Kiro CLI",
   "main": "server.js",
+  "bin": {
+    "tamagui-mcp": "./bin/tamagui-mcp.js"
+  },
   "type": "module",
   "scripts": {
     "acquire": "node scripts/acquire-corpus.js",
